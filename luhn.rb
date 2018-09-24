@@ -15,7 +15,5 @@ def validate_number(num)
     end 
 
     original_numbers.flatten!
-
     original_numbers.reduce(&:+)%10 == 0 ? (puts "\u001b[32mvalid number") : (puts "\u001b[31mnumber invalid" +" please try again.")
-
 end 
