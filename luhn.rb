@@ -1,4 +1,3 @@
-#make sure the number is the appropriate length 
 
 def validate_number(num)
     original_numbers = num.to_s.split("").map! do |x| x.to_i end
@@ -20,5 +19,3 @@ def validate_number(num)
     original_numbers.reduce(&:+)%10 == 0 ? (puts "\u001b[32mvalid number") : (puts "\u001b[31mnumber invalid" +" please try again.")
 
 end 
-
-validate_number(4552250100232342)
